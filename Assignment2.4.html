@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		JavaScript Demo
+		</title>
+	</head>
+	<img src = "image.jpeg" onerror="onErrorDemo()"><!--"onerror this function will be called"-->
+	<body onload="onLoadDemo()"><!--"onload this function will be called"-->
+		<form name= "myForm" onsubmit="return onSubmitDemo()"><!--"onsubmit this function will be called"-->
+			<table>
+				<tr>
+					<td>Click Example</td><td><a href="" onClick="onClickDemo()">Click Here</a></td><!--"onclick this function will be called"-->
+				</tr>
+				<tr>
+		 			<td>Blur Example</td><td><input type="text" id="blur" onblur="onBlurDemo()"></td><!--"onblur this function will be called"-->
+			 	</tr>
+				<tr> 
+					<td>Submit Example</td><td><input type = "submit" value = "submit"></td>
+				</tr>
+		 	</table>
+		</form>
+		<script>
+			function onClickDemo() {
+				alert("You have clicked me");
+			}
+			function onBlurDemo() {
+				alert("You have moved out of the box");
+			}
+			function onErrorDemo() {
+				alert("There is some error");
+			}
+			function onLoadDemo() {
+				alert("Page has been loaded");
+			}
+			function onSubmitDemo() {
+				alert("You have submitted succsessfully!!!");
+			}
+		</script>
+	</body>
+</html>
